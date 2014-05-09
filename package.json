@@ -36,7 +36,10 @@
     "karma-phantomjs-launcher": "~0.1.4",
     "requirejs": "~2.1.11",
     "karma": "~0.12.15",
-    "karma-requirejs": "~0.2.1"
+    "karma-requirejs": "~0.2.1",
+    "karma-script-launcher": "~0.1.0",
+    "karma-html2js-preprocessor": "~0.1.0"
+
   },
   "engines": {
     "node": ">=0.10.0"
