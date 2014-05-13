@@ -21,7 +21,7 @@ define(['angular', 'angular-mocks', 'app', 'views/test-directive.html'], functio
     }));
 
     it('should make hidden element visible', inject(function ($compile) {
-      expect(el.text()).toBe('this sux2');
+      expect(el.text()).toBe('this sux');
     }));
   });
 });
