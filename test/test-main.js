@@ -19,7 +19,8 @@ requirejs.config({
     'angular-resource': '../bower_components/angular-resource/angular-resource',
     'angular-mocks': '../bower_components/angular-mocks/angular-mocks',
     'angular-cookies': '../bower_components/angular-cookies/angular-cookies',
-    angular: '../bower_components/angular/angular'
+    angular: '../bower_components/angular/angular',
+    'views': '../views'
   },
 
     shim: {
@@ -31,7 +32,10 @@ requirejs.config({
         'angular-mocks': {
           deps:['angular'],
           'exports':'angular.mock'
-        }
+        },
+
+        //added specific html file
+        'views/mydirective.html': {deps: ['angular']}
     },
 
     // ask Require.js to load these files (all our tests)

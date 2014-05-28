@@ -1,8 +1,9 @@
 /*jshint unused: vars */
-define(['angular', 'controllers/main']/*deps*/, function (angular, MainCtrl)/*invoke*/ {
+define(['angular', 'controllers/main', 'directives/mydirective']/*deps*/, function (angular, MainCtrl, MydirectiveDirective)/*invoke*/ {
   'use strict';
 
   return angular.module('templateurlApp', ['templateurlApp.controllers.MainCtrl',
+'templateurlApp.directives.Mydirective',
 /*angJSDeps*/
   'ngCookies',
   'ngResource',

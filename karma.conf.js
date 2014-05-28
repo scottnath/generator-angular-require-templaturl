@@ -20,9 +20,17 @@ module.exports = function(config) {
       {pattern: 'app/scripts/*.js', included: false },
       {pattern: 'app/scripts/**/*.js', included: false },
       {pattern: 'test/spec/**/*.js', included: false },
+      {pattern: 'app/views/*.html', included: false },
       // http://karma-runner.github.io/0.10/plus/requirejs.html
       'test/test-main.js'
     ],
+
+    preprocessors: {
+      'app/views/**/*.html': ['ng-html2js']
+    },
+    ngHtml2JsPreprocessor: {
+      stripPrefix: 'app/',
+    },
 
     // list of files / patterns to exclude
     exclude: [
